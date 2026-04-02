@@ -4,6 +4,9 @@
     box-sizing:border-box;
 }
 
+:root {
+    --main-color: #cccccc;
+}
 body {
   background-color: #f5ebdb;
   position: relative;
@@ -56,7 +59,7 @@ p, a{
 
 /* Hover */
 .navbar a:hover {
-    background-color: #cccccc;
+    background-color: #3f3fca;
 }
 
 /* Active */
@@ -66,6 +69,7 @@ p, a{
 
 /*Home*/
 #home {  
+    min-height: 100vh;
     padding: 120px 0;
     display: flex;
     justify-content: center;
@@ -130,8 +134,30 @@ p, a{
 
 /*About*/
 #about {
-    border:2px solid #ff5a5a;
-    font-family: 'Goldman';
+    min-height:100vh;
+    display: grid;
+    grid-template-columns: 3fr 4fr;
+    align-items: center;
+}
+
+#about aside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-about {
+    width: 100%;
+    text-align: center;
+}
+
+.container-about img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 5px solid white;
+    display: block;
+    margin: 0 auto;
 }
 
 .container-about h1{
@@ -143,15 +169,6 @@ p, a{
     font-weight: lighter;
     color: white;
     padding: 5px 0;
-}
-
-.container-about img {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    border: 5px solid white;
-    margin-top: 30px;
-    margin-bottom: 30px;
 }
 
 /*Resume*/
