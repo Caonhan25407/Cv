@@ -5,7 +5,7 @@
 }
 
 :root {
-    --main-color: #cccccc;
+
 }
 body {
   background-color: #f5ebdb;
@@ -138,12 +138,14 @@ p, a{
     display: grid;
     grid-template-columns: 3fr 4fr;
     align-items: center;
+    font-family: 'Oswald';
 }
 
 #about aside {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: black;
 }
 
 .container-about {
@@ -161,7 +163,7 @@ p, a{
 }
 
 .container-about h1{
-    color: white;
+    color: #5a5eff;
     padding: 10px 0;
 } 
 
