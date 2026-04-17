@@ -33,37 +33,8 @@ p, a{
     overflow-wrap: break-word;
 }
 
-/*Thanh navbar*/
 .navbar {
-    background-color: #6263ee;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap; 
-    position: fixed;
-    width: 100%;
-    z-index: 1000;
-}
-
-/* Link */
-.navbar a {
-    color: white;
-    text-align: center;
-    padding: 15px 25px;
-    text-decoration: none;
-    font-family: 'Anton';
-    display: block;
-    font-size: clamp(16px, 3vw, 25px);
-    transition: 0.3s;
-}
-
-/* Hover */
-.navbar a:hover {
-    background-color: #3f3fca;
-}
-
-/* Active */
-.navbar a.active {
+    max-width:1200px;
     
 }
 
@@ -190,65 +161,25 @@ p, a{
     padding: 8px 0;
 }
 
-.skills-container {
+.skills-tags {
     display: flex;
-    flex-wrap: wrap;
-    gap: 40px;
-    justify-content: flex-start;
-    padding: 20px 0;
+    flex-wrap: wrap; /* Tự động xuống hàng khi hết chỗ */
+    gap: 12px;       /* Khoảng cách giữa các thẻ */
+    padding: 10px 0;
 }
 
-/* Container dùng Grid để tự động chia hàng */
-.skills-grid {
-    display: grid;
-    /* Tự động tạo số cột tùy theo độ rộng màn hình, mỗi cột rộng tối thiểu 100px */
-    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-    gap: 80px;
-    margin-top: 20px;
-}
-
-.skill-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-}
-
-.circular-progress {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    background: conic-gradient(#5a5eff calc(var(--percent) * 1%), #e0e0e0 0);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-}
-
-/* Lỗ trắng ở giữa */
-.circular-progress::before {
-    content: "";
-    position: absolute;
-    width: 65px;
-    height: 65px;
-    border-radius: 50%;
-    background-color: #f5ebdb;
-    z-index: 1; 
-}
-
-.progress-value {
-    position: relative;
-    z-index: 2; 
-    font-size: 14px;
-    font-weight: 700;
+.tag {
+    display: inline-block;
+    padding: 8px 25px;    
+    border: 3px solid #1a1a1a;
+    border-radius: 50px;  
     font-family: 'Kanit', sans-serif;
-    color: #333;
-}
-
-.skill-item h3 {
-    text-align: center;
-    margin-bottom: 5px;
-    min-height: 40px; 
+    font-size: 18px;
+    font-weight: 400;
+    color: #1a1a1a;
+    background-color: transparent;
+    cursor: default;
+    transition: all 0.3s ease;
 }
 
 /*Resume*/
