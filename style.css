@@ -33,9 +33,65 @@ p, a{
     overflow-wrap: break-word;
 }
 
+a {
+    font-family: 'Anton';
+}
+
+/*navbar*/
 .navbar {
+    position: fixed;
+    z-index: 1000;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
     max-width:1200px;
-    
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+    border-radius: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 
+        0 8px 32px rbga(31, 38, 135, 0.37), 
+        inset 0 1px 0 rgba(255, 255, 255, 0.3);
+}
+
+.tabcontent {
+    color: rgba(255, 255, 255, 0.95);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.5rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 25px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.tabcontent::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+    transition: left 0.5s;
+}
+
+.tabcontent::before {
+    left: 100%;
+}
+
+.tabcontent:hover {
+    color:white;
+    background: rgba(255, 255, 255, 0.25);
+    transform: translate(-2px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 }
 
 /*Home*/
@@ -46,8 +102,11 @@ p, a{
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
-    
-    border:2px solid #ff5a5a;
+    background-image: url("ios-26-carplay-stock-wallpaper-4000x2182-32005.jpg"); 
+    background-repeat: no-repeat;  
+    background-size: cover;     
+    background-position: center;   
+    background-attachment: fixed;
 }
 .container {
   position: relative;
@@ -56,10 +115,12 @@ p, a{
 }
 
 .top-text {
-  text-align: center;
-  padding: 10px 0;
-  font-size: 25px;
-  letter-spacing: 2px;
+    text-align: center;
+    font-family: 'Audiowide';
+    color: white;
+    font-size: 22px;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
 }
 
 .main {
@@ -77,7 +138,7 @@ p, a{
   font-size: 55px;
   font-weight: 300;
   letter-spacing: 4px;
-  color: #5a5eff;
+  color: white;
 }
         
 .title {
@@ -87,9 +148,7 @@ p, a{
 }
 
 .title span {
-  background: linear-gradient(90deg, #5a5eff, #6051eb);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+    color: white;
 }
 
 .row {
