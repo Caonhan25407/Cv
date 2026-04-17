@@ -136,7 +136,7 @@ p, a{
 #about {
     min-height: 100vh;
     display: grid;
-    grid-template-columns: 3fr 4fr;
+    grid-template-columns: 4fr 5fr;
     font-family: 'Kanit';
     padding-top: 100px;
 }
@@ -190,13 +190,65 @@ p, a{
     padding: 8px 0;
 }
 
-.skills-bar {
-    width: 80%;
-    height: 10px;
-    background-color: #e0e0e0;
-    border-radius: 10px;
-    overflow: hidden;
-    margin: 8px 40px 20px;
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: flex-start;
+    padding: 20px 0;
+}
+
+/* Container dùng Grid để tự động chia hàng */
+.skills-grid {
+    display: grid;
+    /* Tự động tạo số cột tùy theo độ rộng màn hình, mỗi cột rộng tối thiểu 100px */
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 80px;
+    margin-top: 20px;
+}
+
+.skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.circular-progress {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: conic-gradient(#5a5eff calc(var(--percent) * 1%), #e0e0e0 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+/* Lỗ trắng ở giữa */
+.circular-progress::before {
+    content: "";
+    position: absolute;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background-color: #f5ebdb;
+    z-index: 1; 
+}
+
+.progress-value {
+    position: relative;
+    z-index: 2; 
+    font-size: 14px;
+    font-weight: 700;
+    font-family: 'Kanit', sans-serif;
+    color: #333;
+}
+
+.skill-item h3 {
+    text-align: center;
+    margin-bottom: 5px;
+    min-height: 40px; 
 }
 
 /*Resume*/
