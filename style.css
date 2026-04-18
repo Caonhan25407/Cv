@@ -8,7 +8,7 @@
 
 }
 body {
-  background-color: #f5ebdb;
+  background-color: white;
   position: relative;
 }
 
@@ -66,7 +66,7 @@ a {
     font-weight: 500;
     font-size: 1.5rem;
     padding: 0.75rem 1.5rem;
-    border-radius: 25px;
+    border-radius: 50px;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
     overflow: hidden;
@@ -109,9 +109,9 @@ a {
     background-attachment: fixed;
 }
 .container {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
 }
 
 .top-text {
@@ -124,27 +124,27 @@ a {
 }
 
 .main {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     transform: scale(calc(100vw / 1440));
-  transform-origin: top center;
-  font-family: 'Anton';
+    transform-origin: top center;
+    font-family: 'Anton';
 }
 
 .left-vertical {
-  writing-mode: vertical-rl;
-  transform: rotate(180deg);
-  font-size: 55px;
-  font-weight: 300;
-  letter-spacing: 4px;
-  color: white;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    font-size: 55px;
+    font-weight: 300;
+    letter-spacing: 4px;
+    color: white;
 }
         
 .title {
-  font-size: 200px;
-  font-weight: lighter;
-  line-height: 0.95;
+    font-size: 200px;
+    font-weight: lighter;
+    line-height: 0.95;
 }
 
 .title span {
@@ -152,14 +152,14 @@ a {
 }
 
 .row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
 }
 
 .year {
-  font-size: 220px;
+    font-size: 220px;
 }
 
 /*About*/
@@ -168,7 +168,13 @@ a {
     display: grid;
     grid-template-columns: 4fr 5fr;
     font-family: 'Kanit';
-    padding-top: 100px;
+    padding: 120px 20px 20px 20px;
+    gap:20px;
+    background-image: url("ios-26-carplay-stock-wallpaper-4000x2182-32005.jpg"); 
+    background-repeat: no-repeat;  
+    background-size: cover;     
+    background-position: center;   
+    background-attachment: fixed;
 }
 
 #about aside {
@@ -176,10 +182,57 @@ a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+    border-radius: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 
+        0 8px 32px rbga(31, 38, 135, 0.37), 
+        inset 0 1px 0 rgba(255, 255, 255, 0.3);
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.container1-about,
+.block-skills{
+    height: 100%;
+}
+
+.container1-about {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+    border-radius: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 
+        0 8px 32px rbga(31, 38, 135, 0.37), 
+        inset 0 1px 0 rgba(255, 255, 255, 0.3);
+}
+
+.block-skills {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+    border-radius: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 
+        0 8px 32px rgba(31, 38, 135, 0.37), 
+        inset 0 1px 0 rgba(255, 255, 255, 0.3);
 }
 
 #about h1 {
-    color:#5a5eff;
+    color:#ffffff;
     padding: 10px 0 5px;
 }
 
@@ -202,7 +255,8 @@ a {
     border-radius: 50%;
     border: 5px solid white;
     display: block;
-    margin: 0 auto;
+    
+    margin: 20px auto;
 } 
 
 .container-information,
@@ -222,23 +276,39 @@ a {
 
 .skills-tags {
     display: flex;
-    flex-wrap: wrap; /* Tự động xuống hàng khi hết chỗ */
-    gap: 12px;       /* Khoảng cách giữa các thẻ */
+    flex-wrap: wrap; 
+    gap: 12px;       
     padding: 10px 0;
 }
 
-.tag {
+.tag{
     display: inline-block;
-    padding: 8px 25px;    
-    border: 3px solid #1a1a1a;
-    border-radius: 50px;  
+    position: relative;         
+    overflow: hidden;       
+
+    padding: 8px 25px;
+    border: 2px solid rgba(255,255,255,0.95);
+    border-radius: 50px;
+
     font-family: 'Kanit', sans-serif;
     font-size: 18px;
     font-weight: 400;
-    color: #1a1a1a;
-    background-color: transparent;
+    color: rgba(255,255,255,0.95);
+    background: transparent;
+
     cursor: default;
     transition: all 0.3s ease;
+}
+
+.tag:hover::before{
+    left: 100%;
+}
+
+.tag:hover{
+    color: white;
+    background: rgba(255,255,255,0.25);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
 }
 
 /*Resume*/
@@ -327,107 +397,48 @@ a {
 }
 
 /*Contact*/
-#contact{
-    background-color: #3d3d3d;
+footer {
     min-height: 100vh;
-    padding: 120px 20px;
-}
-
-.container-contact{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    row-gap: 0px;
-    column-gap: 50px;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 120px 0px;
-    
-}
-
-.container-contact h3{
-    color:white;  
-}
-
-.container-contact p{
-    color: #ffffff;
-}
-
-.container-contact a{
-    display: inline-block;
-    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    padding-top: 120px;     
+    background-image: url("macos-tahoe-26-5120x2880-28529.jpg"); 
+    background-repeat: no-repeat;  
+    background-size: cover;     
+    background-position: center;   
+    background-attachment: fixed;
     color: white;
-    word-break: break-word;
+    font-family: 'Anton', sans-serif;
 }
 
-/*Responsive mobile*/
-@media (max-width: 600px){
-
-    .navbar{
-        padding: 0px 5px;
-    }
-
-    .navbar ul{
-        flex-wrap: wrap;
-        gap: 0px;
-    }
-
-    .navbar li{
-        padding: 20px 0;
-    }
-    .navbar a{
-        padding: 20px 7px;
-    }
-
-    .container-home{
-        padding: 50px 15px 0px;
-        text-align: center;
-    }
-
-    .container-home img{
-        width: 140px;
-        height: 140px;
-        border: 3px solid white;
-    }
-
-    .container-logo i{
-        gap: 15px;
-    }
-
-    #about,
-    #resume{
-        grid-template-columns: 1fr;
-        padding: 80px 15px;
-        gap: 30px;
-    }
-
-    #projects{
-        grid-template-columns: 1fr;
-        padding: 80px 10px;
-    }
-
-    .timeline{
-        padding-left: 20px;
-    }
-
-    .timeline::before{
-        left: 0;
-    }
-
-    .dot{
-        width: 10px;
-        height: 10px;
-        left: -23px;
-    }
-
-    .container-contact{
-        grid-template-columns: 1fr;
-        text-align: center;
-        gap: 20px;
-        padding: 80px 10px;
-    }
-
-    #contact{
-        padding: 40px;
-    }
+footer h1 {
+    font-size: 4rem;
+    margin-bottom: 60px; 
+    letter-spacing: 2px;
 }
 
+.contact-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    width: 80%;           
+    max-width: 1200px;
+    gap: 30px;            
+}
+
+.col {
+    text-align: center;   
+}
+
+.col h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+
+.col p, .col a {
+    font-size: 1.1rem;
+    color: white;
+    text-decoration: none;
+    word-break: break-all; 
+}
