@@ -2,35 +2,35 @@
 @media (max-width: 740px) {
     .navbar {
         top: 15px;
-        width: 95%; /* Tận dụng thêm không gian chiều ngang */
-        padding: 4px 8px; /* Giảm padding trên dưới, tăng nhẹ hai bên */
-        gap: 2px; /* Khoảng cách cực nhỏ giữa các nút */
+        width: 95%; 
+        padding: 8px 10px; 
+        gap: 2px;
         border-radius: 50px;
         display: flex;
-        justify-content: space-between; /* Chia đều các nút ra sát mép thanh nav */
+        justify-content: space-between;
         align-items: center;
     }
 
     .tabcontent {
-        font-size: 11px; 
-        padding: 6px 4px; /* Giảm padding ngang tối đa để chữ không bị đẩy */
+        font-size: 1rem; 
+        padding: 8px 4px; 
         font-weight: 500;
         text-align: center;
-        white-space: nowrap; /* Tuyệt đối không cho chữ tự ngắt dòng */
-        flex: 1; /* Mỗi nút chiếm 1 phần bằng nhau */
+        white-space: nowrap; 
+        flex: 1; 
         letter-spacing: 0px;
     }
 
-    /* --- Home --- */
+    /*Home*/
     .top-text {
         font-size: 10px;
     }
     .left-vertical {
-        font-size: 20px;
+        font-size: 18px;
     }
             
     .title {
-        font-size: 90px; /* Thu nhỏ font size siêu to */
+        font-size: 90px;
     }
 
     .year {
@@ -39,10 +39,14 @@
 
 
 
-    /* --- About --- */
+    /*About*/
     #about {
-        grid-template-columns: 1fr; /* Chuyển từ 2 cột thành 1 cột */
-        padding: 100px 15px 20px 15px;
+        grid-template-columns: 1fr; 
+        padding: 180px 10px 20px 10px;
+    }
+
+    #about aside {    
+    border-radius: 25px;
     }
 
     .container-about img {
@@ -53,7 +57,7 @@
     .container-information,
     .container-language,
     .container-interest {
-        width: 100%; /* Chiếm full chiều rộng thay vì 70% */
+        width: 100%;
     }
 
     .tag {
@@ -61,20 +65,20 @@
         padding: 6px 15px;
     }
 
-    /* --- Resume --- */
+    /*Resume*/
     #resume {
-        grid-template-columns: 1fr; /* Chuyển từ 2 cột thành 1 cột */
+        grid-template-columns: 1fr; 
         padding: 100px 15px 20px 15px;
     }
 
-    /* --- Projects --- */
+    /*Projects*/
     #projects {
         padding-top: 100px;
         padding-left: 15px;
         padding-right: 15px;
     }
 
-    /* --- Contact / Footer --- */
+    /*Contact / Footer*/
     footer {
         padding-top: 100px;
     }
@@ -85,7 +89,7 @@
     }
 
     .contact-content {
-        grid-template-columns: 1fr; /* Chuyển 3 cột thành 1 cột xếp dọc */
+        grid-template-columns: 1fr; 
         width: 90%;
         padding: 30px 20px;
         gap: 25px;
