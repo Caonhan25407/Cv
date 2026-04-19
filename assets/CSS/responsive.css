@@ -1,0 +1,96 @@
+/*Mobile*/
+@media (max-width 740px) {
+    .navbar {
+        width: 90%;
+        gap: 0.5rem;
+        padding: 5px 10px;
+        flex-wrap: wrap; /* Cho phép rớt dòng nếu có quá nhiều menu */
+    }
+
+    .tabcontent {
+        font-size: 1rem;
+        padding: 0.5rem 0.8rem;
+    }
+
+    /* --- Home --- */
+    .main {
+        /* Bỏ transform scale tỷ lệ màn hình to, tự set lại size cứng cho mobile */
+        transform: none; 
+        flex-direction: column;
+        text-align: center;
+        padding: 0 15px;
+    }
+
+    .left-vertical {
+        writing-mode: horizontal-tb; /* Chuyển chữ dọc thành chữ ngang */
+        transform: none;
+        font-size: 24px;
+        margin-bottom: 15px;
+        letter-spacing: 2px;
+    }
+            
+    .title {
+        font-size: 80px; /* Thu nhỏ font size siêu to */
+    }
+
+    .year {
+        font-size: 80px;
+    }
+
+    .row {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* --- About --- */
+    #about {
+        grid-template-columns: 1fr; /* Chuyển từ 2 cột thành 1 cột */
+        padding: 100px 15px 20px 15px;
+    }
+
+    .container-about img {
+        width: 200px;
+        height: 200px;
+    } 
+
+    .container-information,
+    .container-language,
+    .container-interest {
+        width: 100%; /* Chiếm full chiều rộng thay vì 70% */
+    }
+
+    .tag {
+        font-size: 14px;
+        padding: 6px 15px;
+    }
+
+    /* --- Resume --- */
+    #resume {
+        grid-template-columns: 1fr; /* Chuyển từ 2 cột thành 1 cột */
+        padding: 100px 15px 20px 15px;
+    }
+
+    /* --- Projects --- */
+    #projects {
+        padding-top: 100px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    /* --- Contact / Footer --- */
+    footer {
+        padding-top: 100px;
+    }
+
+    footer h1 {
+        font-size: 2.5rem;
+        margin-bottom: 30px;
+    }
+
+    .contact-content {
+        grid-template-columns: 1fr; /* Chuyển 3 cột thành 1 cột xếp dọc */
+        width: 90%;
+        padding: 30px 20px;
+        gap: 25px;
+    }
+}
