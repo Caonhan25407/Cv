@@ -63,7 +63,7 @@ a {
     border-radius: 50px;
     border: 1px solid rgba(255, 255, 255, 0.25);
     box-shadow: 
-        0 8px 32px rbga(31, 38, 135, 0.37), 
+        0 8px 32px rgba(31, 38, 135, 0.37), 
         inset 0 1px 0 rgba(255, 255, 255, 0.3);
 }
 
@@ -109,7 +109,7 @@ a {
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
-    background-image: url("ios-26-carplay-stock-wallpaper-4000x2182-32005.jpg"); 
+    background-image: url("../PIC/ios-26-carplay-stock-wallpaper-4000x2182-32005.jpg"); 
     background-repeat: no-repeat;  
     background-size: cover;     
     background-position: center;   
@@ -177,7 +177,7 @@ a {
     font-family: 'Kanit';
     padding: 120px 20px 20px 20px;
     gap:20px;
-    background-image: url("ios-26-carplay-stock-wallpaper-4000x2182-32005.jpg"); 
+    background-image: url("../PIC/ios-26-carplay-stock-wallpaper-4000x2182-32005.jpg"); 
     background-repeat: no-repeat;  
     background-size: cover;     
     background-position: center;   
@@ -195,7 +195,7 @@ a {
     border-radius: 50px;
     border: 1px solid rgba(255, 255, 255, 0.25);
     box-shadow: 
-        0 8px 32px rbga(31, 38, 135, 0.37), 
+        0 8px 32px rgba(31, 38, 135, 0.37), 
         inset 0 1px 0 rgba(255, 255, 255, 0.3);
 }
 
@@ -220,7 +220,7 @@ section{
     border-radius: 50px;
     border: 1px solid rgba(255, 255, 255, 0.25);
     box-shadow: 
-        0 8px 32px rbga(31, 38, 135, 0.37), 
+        0 8px 32px rgba(31, 38, 135, 0.37), 
         inset 0 1px 0 rgba(255, 255, 255, 0.3);
 }
 
@@ -349,12 +349,11 @@ section{
     border-radius: 50px;
     border: 1px solid rgba(255, 255, 255, 0.25);
     box-shadow: 
-        0 8px 32px rbga(31, 38, 135, 0.37), 
+        0 8px 32px rgba(31, 38, 135, 0.37), 
         inset 0 1px 0 rgba(255, 255, 255, 0.3);
 }
 
 #projects{
-    display: grid;
     grid-template-columns: 1fr;
     min-height: 100vh;
     display: flex;
@@ -398,7 +397,7 @@ footer {
     flex-direction: column;
     align-items: center;    
     padding-top: 120px;     
-    background-image: url("macos-tahoe-26-5120x2880-28529.jpg"); 
+    background-image: url("../PIC/macos-tahoe-26-5120x2880-28529.jpg"); 
     background-repeat: no-repeat;  
     background-size: cover;     
     background-position: center;   
