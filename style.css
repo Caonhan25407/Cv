@@ -5,13 +5,16 @@
 }
 
 :root {
+    color:#ffffff;
+}
 
+html {
+    scroll-behavior: smooth;
 }
 body {
   background-color: white;
   position: relative;
 }
-
 
 section{
     width: 100%;
@@ -23,6 +26,10 @@ h1{
 
 h3{
     font-size: clamp(20px, 2.5vw, 30px);
+}
+
+p {
+    font-weight: 300;
 }
 
 p, a{
@@ -240,10 +247,6 @@ section{
     font-weight:400;
 }
 
-#about p {
-    font-weight: 300;
-}
-
 .container-about {
     width: 100%;
     text-align: center;
@@ -255,9 +258,12 @@ section{
     border-radius: 50%;
     border: 5px solid white;
     display: block;
-    
     margin: 20px auto;
 } 
+
+.level {
+    font-weight: 200;
+}
 
 .container-information,
 .container-language,
@@ -313,73 +319,62 @@ section{
 
 /*Resume*/
 #resume{
+    min-height: 100vh;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    row-gap: 0px;
-    column-gap: 80px;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 120px 10px;
-    border:2px solid #ff5a5a;
+    grid-template-columns: 1fr 1fr;
+    font-family: 'Kanit';
+    padding: 120px 20px 20px 20px;
+    gap:20px;
+    background-color: #05070a;
+    background-image: 
+        /* Khối màu Xanh Mint lớn ở góc trên bên trái */
+        radial-gradient(at 20% 20%, rgba(130, 224, 215, 0.4) 0px, transparent 60%),
+        /* Khối màu Xanh Dương đậm ở góc dưới bên phải */
+        radial-gradient(at 80% 80%, rgba(60, 110, 210, 0.5) 0px, transparent 70%),
+        /* Quầng màu Xanh Dương nhạt loang ở giữa và bên phải */
+        radial-gradient(at 100% 40%, rgba(110, 190, 240, 0.4) 0px, transparent 50%),
+        /* Quầng màu Xanh Tím rất mờ ở góc dưới bên trái */
+        radial-gradient(at 10% 90%, rgba(109, 122, 219, 0.3) 0px, transparent 50%);
+    background-attachment: fixed;
 }
 
-.timeline{
-    position: relative;
-    padding-left: 40px;
-}
-
-.timeline::before{
-    content: "";
-    position: absolute;
-    left: 5px;
-    top: 10px;
-    width: 3px;
-    height: 100%;
-    background: #ccc;
-}
-
-.timeline-item{
-    position: relative;
-    margin-bottom: 30px;
-}
-
-.dot{
-    position: absolute;
-    left: -40px;
-    top: 15px;
-    width: 12px;
-    height: 12px;
-    background: #6200ff;
-    border-radius: 50%;
-}
-
-.container-education h1{
-    font-family: 'Goldman';
-    color: #6200ff;
-    padding-bottom: 10px;
-}
-
-.content p{
-    line-height: 1.2;
-}
-
-.content li{
-    line-height: 1.2;
-    margin-left: 30px;
-}
-
-.container-work h1{
-    font-family: 'Goldman';
-    color: #6200ff;
-    padding-bottom: 10px;
+.container-education,
+.container-work {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+    border-radius: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 
+        0 8px 32px rbga(31, 38, 135, 0.37), 
+        inset 0 1px 0 rgba(255, 255, 255, 0.3);
 }
 
 #projects{
     display: grid;
     grid-template-columns: 1fr;
-    max-width: 1000px;
-    margin: auto;
-    padding: 120px 20px 0px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    padding-top: 120px;     
+    background-color: #05070a;
+    background-image: 
+        /* Khối màu Xanh Mint lớn ở góc trên bên trái */
+        radial-gradient(at 20% 20%, rgba(130, 224, 215, 0.4) 0px, transparent 60%),
+        /* Khối màu Xanh Dương đậm ở góc dưới bên phải */
+        radial-gradient(at 80% 80%, rgba(60, 110, 210, 0.5) 0px, transparent 70%),
+        /* Quầng màu Xanh Dương nhạt loang ở giữa và bên phải */
+        radial-gradient(at 100% 40%, rgba(110, 190, 240, 0.4) 0px, transparent 50%),
+        /* Quầng màu Xanh Tím rất mờ ở góc dưới bên trái */
+        radial-gradient(at 10% 90%, rgba(109, 122, 219, 0.3) 0px, transparent 50%);
+    background-attachment: fixed;
+    color: white;
+    font-family: 'Anton', sans-serif;
+    
 }
 
 .container-certificates h1,
@@ -420,10 +415,22 @@ footer h1 {
 
 .contact-content {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); 
-    width: 80%;           
-    max-width: 1200px;
-    gap: 30px;            
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+    
+    width: 80%;
+    max-width: 1000px;
+    padding: 40px; 
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+    border-radius: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 
+        0 8px 32px rgba(31, 38, 135, 0.37), 
+        inset 0 1px 0 rgba(255, 255, 255, 0.3); 
 }
 
 .col {
