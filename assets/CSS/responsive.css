@@ -1,7 +1,7 @@
 /*Mobile*/
 @media (max-width: 740px) {
     .navbar {
-        top: 15px;
+        top: 10px;
         width: 95%; 
         padding: 8px 10px; 
         gap: 2px;
@@ -40,7 +40,7 @@
     /*About*/
     #about {
         grid-template-columns: 1fr; 
-        padding: 180px 10px 20px 10px;
+        padding: 78px 10px 20px 10px;
     }
 
     #about aside,
