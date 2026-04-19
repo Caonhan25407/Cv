@@ -37,16 +37,16 @@
         font-size: 90px;
     }
 
-
-
     /*About*/
     #about {
         grid-template-columns: 1fr; 
         padding: 180px 10px 20px 10px;
     }
 
-    #about aside {    
-    border-radius: 25px;
+    #about aside,
+    .container1-about,
+    .block-skills {    
+        border-radius: 30px;
     }
 
     .container-about img {
