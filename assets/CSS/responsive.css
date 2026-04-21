@@ -1,5 +1,15 @@
 /*Mobile*/
 @media (max-width: 740px) {
+    #home,
+    #about,
+    #resume,
+    #projects,
+    footer {
+        background-size: cover;     
+        background-position: center;
+        background-attachment: scroll;
+    }
+
     #about,
     #resume,
     #projects,
