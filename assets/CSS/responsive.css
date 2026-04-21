@@ -1,5 +1,14 @@
 /*Mobile*/
 @media (max-width: 740px) {
+    #about,
+    #resume,
+    #projects,
+    section,
+    .block-skills,
+    .contact-content {
+        gap: 10px;
+    }
+
     .navbar {
         top: 10px;
         width: 95%; 
@@ -70,12 +79,17 @@
 
     /*Resume*/
     #resume,
-    #project {
+    #projects {
         grid-template-columns: 1fr; 
         padding: 78px 10px 20px 10px;
     }
 
-   
+    #projects aside,
+    .container-certificates,
+    .block-projects {
+        grid-column:auto;
+        grid-row:auto;
+}
 
     /*Contact / Footer*/
     footer {

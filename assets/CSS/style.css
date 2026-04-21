@@ -256,7 +256,7 @@ section{
     width: 300px;
     height: 300px;
     border-radius: 50%;
-    border: 5px solid white;
+    border: 3px solid white;
     display: block;
     margin: 20px auto;
 } 
@@ -321,7 +321,7 @@ section{
 #resume{
     min-height: 100vh;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 4fr 5fr;
     font-family: 'Kanit';
     padding: 120px 20px 20px 20px;
     gap:20px;
@@ -391,9 +391,24 @@ section{
     grid-row: 1 / 2;
 }
 
+.certificates-year {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+}
+
 .container-certificates {
     grid-column: 2/3;
     grid-row: 1/2;
+}
+
+.certificates {
+    padding: 20px;
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(25px);
+    border-radius: 35px;
+    border: 1px solid rgba(255,255,255,0.25);
 }
 
 .block-projects {
