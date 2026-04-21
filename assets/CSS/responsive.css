@@ -47,7 +47,8 @@
     .container1-about,
     .block-skills,
     .container-education,
-    .container-work {    
+    .container-work,
+    .contact-content {    
         border-radius: 32px;
     }
 
@@ -68,21 +69,17 @@
     }
 
     /*Resume*/
-    #resume {
+    #resume,
+    #project {
         grid-template-columns: 1fr; 
         padding: 78px 10px 20px 10px;
     }
 
-    /*Projects*/
-    #projects {
-        padding-top: 100px;
-        padding-left: 15px;
-        padding-right: 15px;
-    }
+   
 
     /*Contact / Footer*/
     footer {
-        padding-top: 100px;
+        padding-top: 80px;
     }
 
     footer h1 {
@@ -92,8 +89,8 @@
 
     .contact-content {
         grid-template-columns: 1fr; 
-        width: 90%;
-        padding: 30px 20px;
+        width: 95%;
+        padding: 78px 10px 20px 10px;
         gap: 25px;
     }
 }
