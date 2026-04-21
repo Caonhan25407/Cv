@@ -45,7 +45,9 @@
 
     #about aside,
     .container1-about,
-    .block-skills {    
+    .block-skills,
+    .container-education,
+    .container-work {    
         border-radius: 32px;
     }
 
@@ -57,7 +59,7 @@
     .container-information,
     .container-language,
     .container-interest {
-        width: 100%;
+        width: 90%;
     }
 
     .tag {
@@ -68,7 +70,7 @@
     /*Resume*/
     #resume {
         grid-template-columns: 1fr; 
-        padding: 100px 15px 20px 15px;
+        padding: 78px 10px 20px 10px;
     }
 
     /*Projects*/
