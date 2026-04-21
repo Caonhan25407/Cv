@@ -4,16 +4,13 @@
     box-sizing:border-box;
 }
 
-:root {
-    color:#ffffff;
-}
-
 html {
     scroll-behavior: smooth;
 }
 body {
-  background-color: white;
-  position: relative;
+    color: white;
+    background-color: white;
+    position: relative;
 }
 
 section{
@@ -44,6 +41,27 @@ a {
     font-family: 'Anton';
 }
 
+.navbar,
+#about aside,
+.container-education,
+.container-work,
+.container1-about,
+.block-skills,
+#projects aside,
+.container-certificates,
+.block-projects,
+.certificates,
+.contact-content {
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+    border-radius: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 
+        0 8px 32px rgba(31, 38, 135, 0.37), 
+        inset 0 1px 0 rgba(255, 255, 255, 0.3);
+}
+
 /*navbar*/
 .navbar {
     position: fixed;
@@ -57,14 +75,6 @@ a {
     display: flex;
     justify-content: center;
     gap: 2rem;
-    background-color: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(25px);
-    -webkit-backdrop-filter: blur(25px);
-    border-radius: 50px;
-    border: 1px solid rgba(255, 255, 255, 0.25);
-    box-shadow: 
-        0 8px 32px rgba(31, 38, 135, 0.37), 
-        inset 0 1px 0 rgba(255, 255, 255, 0.3);
 }
 
 .tabcontent {
@@ -189,14 +199,6 @@ a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(25px);
-    -webkit-backdrop-filter: blur(25px);
-    border-radius: 50px;
-    border: 1px solid rgba(255, 255, 255, 0.25);
-    box-shadow: 
-        0 8px 32px rgba(31, 38, 135, 0.37), 
-        inset 0 1px 0 rgba(255, 255, 255, 0.3);
 }
 
 section{
@@ -210,32 +212,11 @@ section{
     height: 100%;
 }
 
-.container1-about {
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(25px);
-    -webkit-backdrop-filter: blur(25px);
-    border-radius: 50px;
-    border: 1px solid rgba(255, 255, 255, 0.25);
-    box-shadow: 
-        0 8px 32px rgba(31, 38, 135, 0.37), 
-        inset 0 1px 0 rgba(255, 255, 255, 0.3);
-}
-
+.container1-about,
 .block-skills {
     display: flex;
     flex-direction: column;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(25px);
-    -webkit-backdrop-filter: blur(25px);
-    border-radius: 50px;
-    border: 1px solid rgba(255, 255, 255, 0.25);
-    box-shadow: 
-        0 8px 32px rgba(31, 38, 135, 0.37), 
-        inset 0 1px 0 rgba(255, 255, 255, 0.3);
 }
 
 #about h1 {
@@ -318,7 +299,8 @@ section{
 }
 
 /*Resume*/
-#resume{
+#resume,
+#projects {
     min-height: 100vh;
     display: grid;
     grid-template-columns: 4fr 5fr;
@@ -343,47 +325,12 @@ section{
     display: flex;
     flex-direction: column;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(25px);
-    -webkit-backdrop-filter: blur(25px);
-    border-radius: 50px;
-    border: 1px solid rgba(255, 255, 255, 0.25);
-    box-shadow: 
-        0 8px 32px rgba(31, 38, 135, 0.37), 
-        inset 0 1px 0 rgba(255, 255, 255, 0.3);
-}
-
-#projects{
-    min-height: 100vh;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: auto auto; 
-    font-family: 'Kanit';
-    padding: 120px 20px 20px 20px;
-    gap:20px;
-    background-color: #05070a;
-    background-image: 
-        /* Khối màu Xanh Mint lớn ở góc trên bên trái */
-        radial-gradient(at 20% 20%, rgba(130, 224, 215, 0.4) 0px, transparent 60%),
-        /* Khối màu Xanh Dương đậm ở góc dưới bên phải */
-        radial-gradient(at 80% 80%, rgba(60, 110, 210, 0.5) 0px, transparent 70%),
-        /* Quầng màu Xanh Dương nhạt loang ở giữa và bên phải */
-        radial-gradient(at 100% 40%, rgba(110, 190, 240, 0.4) 0px, transparent 50%),
-        /* Quầng màu Xanh Tím rất mờ ở góc dưới bên trái */
-        radial-gradient(at 10% 90%, rgba(109, 122, 219, 0.3) 0px, transparent 50%);
-    background-attachment: fixed;
-    color: white;
-    font-family: 'Anton', sans-serif;
 }
 
 #projects aside,
 .container-certificates,
 .block-projects {
     padding: 25px;
-    background: rgba(255,255,255,0.15);
-    backdrop-filter: blur(25px);
-    border-radius: 35px;
-    border: 1px solid rgba(255,255,255,0.25);
 }
 
 #projects aside {
@@ -404,11 +351,7 @@ section{
 }
 
 .certificates {
-    padding: 20px;
-    background: rgba(255,255,255,0.15);
-    backdrop-filter: blur(25px);
-    border-radius: 35px;
-    border: 1px solid rgba(255,255,255,0.25);
+    padding: 10px;
 }
 
 .block-projects {
@@ -449,14 +392,6 @@ footer h1 {
     width: 80%;
     max-width: 1000px;
     padding: 40px; 
-    background-color: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(25px);
-    -webkit-backdrop-filter: blur(25px);
-    border-radius: 50px;
-    border: 1px solid rgba(255, 255, 255, 0.25);
-    box-shadow: 
-        0 8px 32px rgba(31, 38, 135, 0.37), 
-        inset 0 1px 0 rgba(255, 255, 255, 0.3); 
 }
 
 .col {
