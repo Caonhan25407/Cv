@@ -4,9 +4,6 @@
     box-sizing:border-box;
 }
 
-html {
-    scroll-behavior: smooth;
-}
 body {
     color: white;
     background-color: white;
@@ -109,6 +106,41 @@ a {
     background: rgba(255, 255, 255, 0.25);
     transform: translate(-2px);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/*Banner*/
+.name-line {
+    overflow: hidden;
+    width: 100%;
+    padding: 10px 0;
+    position:fixed;
+    bottom: 0;
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 
+        0 8px 32px rgba(31, 38, 135, 0.37), 
+        inset 0 1px 0 rgba(255, 255, 255, 0.3);
+}
+
+.track {
+    z-index: 2000;
+    display: flex;
+    white-space: nowrap;
+}
+
+.item {
+    gap: 50px;
+    font-family: 'Anton';
+    padding: 0 40px;
+    font-size: 1.2rem;
+}
+
+.item p {
+    gap: 50px;
+    font-size: 16px;
 }
 
 /*Home*/

@@ -82,6 +82,10 @@
         width: 90%;
     }
 
+    .skill-tag {
+        padding-left: 5px;
+    }    
+    
     .tag {
         font-size: 14px;
         padding: 6px 15px;
@@ -99,7 +103,15 @@
     .block-projects {
         grid-column:auto;
         grid-row:auto;
-}
+    }
+
+    .container-certificates {
+        padding: 20px;
+    }
+
+    .certificates-year {
+        padding: 5px 5px 0 5px;
+    }
 
     /*Contact / Footer*/
     footer {
@@ -107,8 +119,8 @@
     }
 
     footer h1 {
-        font-size: 2.5rem;
-        margin-bottom: 30px;
+        font-size: 1.5rem;
+        margin-bottom: 10px;
     }
 
     .contact-content {
