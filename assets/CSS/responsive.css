@@ -66,8 +66,7 @@
     .container1-about,
     .block-skills,
     .container-education,
-    .container-work,
-    .contact-content {    
+    .container-work {    
         border-radius: 32px;
     }
 
@@ -125,8 +124,9 @@
 
     .contact-content {
         grid-template-columns: 1fr; 
-        width: 95%;
+        width: 100%;
         padding: 20px 10px;
         gap: 25px;
+
     }
 }

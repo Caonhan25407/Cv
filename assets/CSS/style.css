@@ -36,6 +36,8 @@ p, a{
 
 a {
     font-family: 'Anton';
+    text-decoration: none;
+    color: inherit;
 }
 
 .navbar,
@@ -47,8 +49,7 @@ a {
 #projects aside,
 .container-certificates,
 .block-projects,
-.certificates,
-.contact-content {
+.certificates {
     background-color: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(25px);
     -webkit-backdrop-filter: blur(25px);
@@ -119,7 +120,6 @@ a {
     background-color: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
-    border: 1px solid rgba(255, 255, 255, 0.25);
     box-shadow: 
         0 8px 32px rgba(31, 38, 135, 0.37), 
         inset 0 1px 0 rgba(255, 255, 255, 0.3);
@@ -397,9 +397,8 @@ footer {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    align-items: center;    
     padding-top: 120px;     
-    background-image: url("../PIC/macos-tahoe-26-5120x2880-28529.jpg"); 
+    background-image: url("../PIC/ios-26-carplay-stock-wallpaper-4000x2182-32005.jpg"); 
     background-repeat: no-repeat;  
     background-size: cover;     
     background-position: center;   
@@ -408,38 +407,37 @@ footer {
     font-family: 'Anton', sans-serif;
 }
 
-footer h1 {
-    font-size: 4rem;
-    margin-bottom: 60px; 
-    letter-spacing: 2px;
-}
-
 .contact-content {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-content: space-around;
-    align-items: center;
-    gap: 30px;
-    
-    width: 80%;
-    max-width: 1000px;
-    padding: 40px; 
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50ch;
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+    box-shadow: 
+        0 8px 32px rgba(31, 38, 135, 0.37), 
+        inset 0 1px 0 rgba(255, 255, 255, 0.3);
 }
 
-.col {
-    text-align: center;   
+/* .contact-form input {
+    width: 600px;
+    height: 200px;
 }
 
-.col h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-    opacity: 0.8;
-}
+.contact-form button {
+    width: 90px;
+    height: 60px;
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(25px);
+    border-radius: 50px;
+    -webkit-backdrop-filter: blur(25px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 
+        0 8px 32px rgba(31, 38, 135, 0.37), 
+        inset 0 1px 0 rgba(255, 255, 255, 0.3);
 
-.col p, .col a {
-    font-size: 1.1rem;
-    color: white;
-    text-decoration: none;
-    word-break: break-all; 
-}
+    font-size: 16px;
+} */
 
