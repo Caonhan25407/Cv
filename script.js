@@ -37,3 +37,17 @@ console.log(`
     DTB: ${myTB};
     Xep loai: ${xepLoai(myTB)};
     `);
+
+const track = document.getElementById('track');
+const item = track.querySelector('.item');
+
+function fillTrack() {
+    const screenWidth = window.innerWidth;
+    while (track.offsetWidth < screenWidth * 2) {
+        const clone = item.cloneNode(true);
+        track.appendChild(clone);
+    }
+}
+fillTrack();
+
+window.addEventListener('resize', fillTrack);

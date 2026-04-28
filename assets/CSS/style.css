@@ -10,27 +10,24 @@ body {
     position: relative;
 }
 
-section{
+section {
     width: 100%;
-}
-
-h1{
-    font-size: clamp(24px, 4vw, 40px);
-}
-
-h3{
-    font-size: clamp(20px, 2.5vw, 30px);
 }
 
 p {
     font-weight: 300;
 }
 
-p, a{
-    font-size: clamp(16px, 2vw, 25px);
+h1 {
+    font-size: 2.5em;
 }
 
-p, a{
+h3 {
+    font-size: 2em;
+}
+
+p, a {
+    font-size: 1.5em;
     overflow-wrap: break-word;
 }
 
@@ -109,6 +106,17 @@ a {
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 }
 
+.item {
+    gap: 50px;
+    font-family: 'Anton';
+    padding: 0 40px;
+    font-size: 1.2rem;
+}
+
+.item p {
+    gap: 50px;
+}
+
 /*Banner*/
 .name-line {
     overflow: hidden;
@@ -129,18 +137,18 @@ a {
     z-index: 2000;
     display: flex;
     white-space: nowrap;
+    display: flex;
+    width: max-content;
+    animation: marquee 15s linear infinite;
 }
 
-.item {
-    gap: 50px;
-    font-family: 'Anton';
-    padding: 0 40px;
-    font-size: 1.2rem;
-}
-
-.item p {
-    gap: 50px;
-    font-size: 16px;
+@keyframes marquee {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
 }
 
 /*Home*/
@@ -410,6 +418,8 @@ footer {
 .contact-content {
     text-align: center;
     position: absolute;
+    text-align: center;
+    padding-top: 20px;
     bottom: 0;
     width: 100%;
     height: 50ch;
@@ -421,12 +431,11 @@ footer {
         inset 0 1px 0 rgba(255, 255, 255, 0.3);
 }
 
-/* .contact-form input {
-    width: 600px;
-    height: 200px;
+.col {
+    padding-top: 15px;
 }
 
-.contact-form button {
+/* .contact-form button {
     width: 90px;
     height: 60px;
     background-color: rgba(255, 255, 255, 0.15);
