@@ -1,15 +1,15 @@
 /*Mobile*/
 @media (max-width: 740px) {
     h1 {
-        font-size: 1.5em;
+        font-size: 1.5rem;
     }
 
     h3 {
-        font-size: 1.2em;
+        font-size: 1.2rem;
     }
 
     p, a {
-        font-size: 1em;
+        font-size: 1rem;
     }
 
     #home,
@@ -44,34 +44,34 @@
 
     .tabcontent {
         font-size: 1rem; 
-        padding: 8px 4px; 
+        padding: 0.5rem 0.25rem; 
         font-weight: 500;
         text-align: center;
         white-space: nowrap; 
         flex: 1; 
-        letter-spacing: 0px;
+        letter-spacing: 0;
     }
 
     /*Home*/
     .top-text {
-        font-size: 10px;
+        font-size: 0.7rem;
     }
     .left-vertical {
-        font-size: 18px;
+        font-size: 1.1rem;
     }
             
     .title {
-        font-size: 90px;
+        font-size: 5.6rem;
     }
 
     .year {
-        font-size: 90px;
+        font-size: 5.6rem;
     }
 
     /*About*/
     #about {
         grid-template-columns: 1fr; 
-        padding: 78px 10px 20px 10px;
+        padding: 4.8rem 0.5rem 1.25rem 0.5rem;
     }
 
     #about aside,
@@ -79,12 +79,13 @@
     .block-skills,
     .container-education,
     .container-work {    
-        border-radius: 32px;
+        border-radius: 2rem;
     }
 
     .container-about img {
-        width: 200px;
-        height: 200px;
+        width: 12.5rem;
+        height: 12.5rem;
+        margin-bottom: 0.2rem;
     } 
 
     .container-information,
@@ -94,19 +95,19 @@
     }
 
     .skill-tag {
-        padding-left: 5px;
+        padding-left: 0.3rem;
     }    
     
     .tag {
-        font-size: 14px;
-        padding: 6px 15px;
+        font-size: 1rem;
+        padding: 0.3rem 1rem;
     }
 
     /*Resume*/
     #resume,
     #projects {
         grid-template-columns: 1fr; 
-        padding: 78px 10px 20px 10px;
+        padding: 4.8rem 0.5rem 1.25rem 0.5rem;
     }
 
     #projects aside,
@@ -117,28 +118,26 @@
     }
 
     .container-certificates {
-        padding: 20px;
+        padding: 1.25rem;
     }
 
     .certificates-year {
-        padding: 5px 5px 0 5px;
+        padding: 0.3rem 0.3rem 0 0.3rem;
     }
 
     /*Contact / Footer*/
     footer {
-        padding-top: 80px;
+        padding-top: 5rem;
     }
 
     footer h1 {
         font-size: 1.5rem;
-        margin-bottom: 10px;
+        margin-bottom: 0.5rem;
     }
 
     .contact-content {
-        grid-template-columns: 1fr; 
-        width: 100%;
-        padding: 20px 10px;
-        gap: 25px;
-
+        padding: 1.25rem 0.5rem;
+        gap: 1.5rem;
+        height: 40vh;
     }
 }
