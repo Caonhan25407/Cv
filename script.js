@@ -1,3 +1,4 @@
+
 let fullName = "Cao Tran Thien Nhan";
 let birthYear = 2007;
 let isStudent = true;
