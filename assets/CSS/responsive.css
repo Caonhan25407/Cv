@@ -137,9 +137,8 @@
     }
 
     .contact-content {
-        padding: 1.25rem 0.5rem;
+        padding: 1.25rem 0.5rem 4rem 0.5rem;
         gap: 1.5rem;
-        height: 50vh;
     }
 }
 
@@ -281,9 +280,8 @@
     }
 
     .contact-content {
-        padding: 1.25rem 0.5rem;
+        padding: 1.25rem 0.5rem 4rem 0.5rem;
         gap: 1.5rem;
-        height: 40vh;
     }
 
     .col h3 {
